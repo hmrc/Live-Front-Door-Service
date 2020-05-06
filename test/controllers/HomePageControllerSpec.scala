@@ -16,21 +16,30 @@
 
 package controllers
 
-import javax.inject.Inject
-import play.api.i18n.I18nSupport
-import play.api.mvc.{Action, AnyContent, MessagesControllerComponents}
-import uk.gov.hmrc.play.bootstrap.controller.FrontendBaseController
+import base.SpecBase
+import play.api.test.FakeRequest
+import play.api.test.Helpers._
 import views.html.HomePageView
 
-class HomePageController @Inject()(
-                                    val controllerComponents: MessagesControllerComponents,
-                                    view: HomePageView
-                                  ) extends FrontendBaseController with I18nSupport {
+class HomePageControllerSpec extends SpecBase {
 
-  def onPageLoad():Action[AnyContent] = Action { implicit request =>
-    Ok(view())
+  "onPageLoad" must {
+    "return OK and the correct view for a GET" in {
+      val application = applicationBuilder(userAnswers = None).build()
+      val request = FakeRequest(GET, routes.HomePageController.onPageLoad().url)
+      val result = route(application, request).value
+
+      val view = application.injector.instanceOf[HomePageView]
+
+      status(result) mustEqual OK
+
+      contentAsString(result) mustEqual
+        view()(fakeRequest, messages).toString
+
+      application.stop()
+
+    }
   }
+
+
 }
-
-
-
