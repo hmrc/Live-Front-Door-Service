@@ -18,7 +18,7 @@ package controllers
 
 import javax.inject.Inject
 import play.api.i18n.I18nSupport
-import play.api.mvc.{Action, AnyContent, MessagesControllerComponents}
+import play.api.mvc.{Action, AnyContent, Call, MessagesControllerComponents}
 import uk.gov.hmrc.play.bootstrap.controller.FrontendBaseController
 import views.html.AssystPageView
 
@@ -29,5 +29,10 @@ class AssystPageController @Inject()(
 
   def onPageLoad():Action[AnyContent] = Action { implicit request =>
     Ok(view())
+  }
+
+  def onPageSubmit(): Action[AnyContent] = Action { implicit request =>
+    //need to retrieve value from form and drop it into mongo
+    Redirect(Call("GET", "/whoIsTheDSM"))
   }
 }

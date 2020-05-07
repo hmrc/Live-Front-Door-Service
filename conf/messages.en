@@ -2,6 +2,11 @@ assystPageView.title=Has an Assyst been raised
 assystPageView.heading=Has an Assyst been raised
 assystPageView.guidance=Please select yes or no
 
+assystPageView.title=Who is the DSM
+assystPageView.heading=Who is the DSM
+assystPageView.guidance=Please fill in the text box
+
+
 checkYourAnswers.title = Check Your Answers
 checkYourAnswers.heading = Check Your Answers
 checkYourAnswers.guidance = Guidance for check your answers

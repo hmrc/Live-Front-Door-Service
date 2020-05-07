@@ -19,7 +19,7 @@ package controllers
 import base.SpecBase
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
-import views.html.AssystPageView
+import views.html.{AssystPageView}
 
 class AssystPageControllerSpec extends SpecBase {
 
@@ -38,6 +38,20 @@ class AssystPageControllerSpec extends SpecBase {
 
       application.stop()
 
+    }
+  }
+
+  "onPageSubmit" must {
+    "Redircte to /whoIsTheDSM" in {
+
+      val application = applicationBuilder(userAnswers = None).build()
+      val request = FakeRequest(POST, routes.AssystPageController.onPageSubmit().url)
+      val result = route(application, request).value
+
+      status(result) mustEqual SEE_OTHER
+      redirectLocation(result) mustBe Some("/whoIsTheDSM")
+
+      application.stop()
     }
   }
 
