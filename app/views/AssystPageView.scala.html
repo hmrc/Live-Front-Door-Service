@@ -15,16 +15,16 @@
  *@
 
 @this(
-    main_template: MainTemplate
+main_template: MainTemplate
 )
 
 @()(implicit request: Request[_], messages: Messages)
 
 @main_template(
-    title = messages("session_expired.title")
-    ) {
+title = messages("assystPageView.title")
+) {
 
-    @components.heading("session_expired.heading")
+@components.heading("assystPageView.heading")
 
-    <p>@messages("session_expired.guidance")</p>
+<p>@messages("assystPageView.guidance")</p>
 }
