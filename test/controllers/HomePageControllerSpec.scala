@@ -19,21 +19,17 @@ package controllers
 import base.SpecBase
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
-import views.html.SessionExpiredView
+import views.html.HomePageView
 
-class SessionExpiredControllerSpec extends SpecBase {
+class HomePageControllerSpec extends SpecBase {
 
-  "SessionExpired Controller" must {
-
+  "onPageLoad" must {
     "return OK and the correct view for a GET" in {
-
       val application = applicationBuilder(userAnswers = None).build()
-
-      val request = FakeRequest(GET, routes.SessionExpiredController.onPageLoad().url)
-
+      val request = FakeRequest(GET, routes.HomePageController.onPageLoad().url)
       val result = route(application, request).value
 
-      val view = application.injector.instanceOf[SessionExpiredView]
+      val view = application.injector.instanceOf[HomePageView]
 
       status(result) mustEqual OK
 
@@ -41,6 +37,9 @@ class SessionExpiredControllerSpec extends SpecBase {
         view()(fakeRequest, messages).toString
 
       application.stop()
+
     }
   }
+
+
 }
