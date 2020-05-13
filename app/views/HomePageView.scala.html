@@ -25,16 +25,14 @@ main_template: MainTemplate
 title = messages("home.page.title")
  ) {
 
- @components.back_link()
-
    @components.heading("home.page.heading")
 
    <h1 class="heading-large">Use this service to:</h1>
 
    <ul class="list-bullet">
-    <li>Request Live Service(LS) investigation</li>
-    <li>Progress chase LS investigation requests, with a submission reference</li>
-    <li>Log in as a LS team member to view request submissions</li>
+    <li>Request Live Service investigation</li>
+    <li>Progress chase Live Service investigation requests, using a submission reference</li>
+    <li>Log in as a Live Services team member to view request submissions</li>
    </ul>
 
  @components.button_link(messages("home.page.request.button.text"), "request-live-service-investigation")
