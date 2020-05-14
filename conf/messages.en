@@ -25,6 +25,14 @@ index.title = Live-Front-Door-Service
 index.heading = Live-Front-Door-Service
 index.guidance = Welcome to your new frontend. Please see the README file for a guide to getting started.
 
+home.page.title = Live Front Door Service
+home.page.heading = Request Live Service investigation
+home.page.request.button.text = Request Live Service investigation
+home.page.progress.chase.button.text = Progress chase
+home.page.live.service.log.in.button.text = Log in
+
+
+
 session_expired.title = For your security, this service has been reset
 session_expired.heading = For your security, this service has been reset
 session_expired.guidance = The details you have given have been deleted because you did not continue the service for 15 minutes.
@@ -37,7 +45,7 @@ site.hidden-edit = Change {0}
 site.no = No
 site.yes = Yes
 site.continue = Continue
-site.service_name = Live-Front-Door-Service
+site.service_name = Live Front Door Service
 site.textarea.char_limit = (Limit is {0} characters)
 
 unauthorised.title = You can’t access this service with this account
