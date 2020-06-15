@@ -31,6 +31,12 @@ home.page.request.button.text = Request Live Service investigation
 home.page.progress.chase.button.text = Progress chase
 home.page.live.service.log.in.button.text = Log in
 
+ls.log.in.title = Live Service Log In
+ls.log.in.heading = Sign in using Live Service team credentials
+ls.log.in.user.ID.text = Live Service user ID
+ls.log.in.user.ID.text.hint = This could be up to 12 characters.
+ls.log.in.password.text = Password
+ls.log.in.sign.in.button = Sign in
 
 
 session_expired.title = For your security, this service has been reset

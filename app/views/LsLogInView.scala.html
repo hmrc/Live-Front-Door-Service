@@ -1,0 +1,40 @@
+@*
+ * Copyright 2020 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@this(
+    main_template: MainTemplate
+)
+
+@()(implicit request: Request[_], messages: Messages)
+
+@main_template(
+    title = messages("ls.log.in.title")
+    ) {
+
+    @components.back_link()
+
+    @components.heading("ls.log.in.heading")
+
+    <div class="form-group"> <label for="user_id" class="form-label" aria-describedby="user_id-hint">@messages("ls.log.in.user.ID.text")</label> <span class="form-hint" id="user_id-hint">@messages("ls.log.in.user.ID.text.hint")</span>
+        <input type="text" name="user_id" id="user_id" class="form-control  " value="" maxlength="22" aria-describedby="user_id-hint" autocomplete="username">
+    </div>
+
+    <div class="form-group"> <label for="password" class="form-label">@messages("ls.log.in.password.text")</label>
+        <input type="password" name="password" id="password" class="form-control  " autocomplete="current-password">
+    </div>
+
+    @components.button_link(messages("ls.log.in.sign.in.button"), "live-service-landing")
+}
