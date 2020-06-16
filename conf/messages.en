@@ -38,6 +38,17 @@ ls.log.in.user.ID.text.hint = This could be up to 12 characters.
 ls.log.in.password.text = Password
 ls.log.in.sign.in.button = Sign in
 
+live.service.landing.title = Live Service Landing
+live.service.landing.heading = Welcome to Live Service front door hub
+
+request.investigion.info.title = Request Investigation Information
+request.investigion.info.heading = Request Live Service investigation
+request.investigion.info.text.heading. = Use this service to request:
+request.investigion.info.text.heading.item.1 = Live Service investigation on a desk pro reference
+request.investigion.info.text.heading.item.2 = Legislative updates to a service
+request.investigion.info.text.heading.item.3 = Improvements or changes
+request.investigion.info.text.heading.item.4 = Bug fixes or errors, not currently relating to Desk-Pro
+
 
 session_expired.title = For your security, this service has been reset
 session_expired.heading = For your security, this service has been reset
