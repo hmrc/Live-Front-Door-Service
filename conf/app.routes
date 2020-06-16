@@ -8,6 +8,8 @@ GET        /ls-log-in                                   controllers.LsLogInContr
 
 GET        /live-service-landing                        controllers.LiveServiceLndingController.onPageLoad
 
+GET        /request-investigation-information           controllers.RequestInvestigationInfoPageController.onPageLoad
+
 GET        /assets/*file                                controllers.Assets.versioned(path="/public", file: Asset)
 
 GET        /language/:lang                              controllers.LanguageSwitchController.switchToLanguage(lang: String)

@@ -27,8 +27,13 @@ index.guidance = Welcome to your new frontend. Please see the README file for a 
 
 home.page.title = Live Front Door Service
 home.page.heading = Request Live Service investigation
+home.page.use.service.for.heading.text = Use this service to:
+home.page.use.service.for.text.item.1 = Request Live Service investigation
+home.page.use.service.for.text.item.2 = Progress chase Live Service investigation requests, using a submission reference
+home.page.use.service.for.text.item.3 = Log in as a Live Service team member to view request submissions
 home.page.request.button.text = Request Live Service investigation
 home.page.progress.chase.button.text = Progress chase
+home.page.live.service.log.in.heading.text = Live Service team
 home.page.live.service.log.in.button.text = Log in
 
 ls.log.in.title = Live Service Log In
@@ -41,13 +46,13 @@ ls.log.in.sign.in.button = Sign in
 live.service.landing.title = Live Service Landing
 live.service.landing.heading = Welcome to Live Service front door hub
 
-request.investigion.info.title = Request Investigation Information
-request.investigion.info.heading = Request Live Service investigation
-request.investigion.info.text.heading. = Use this service to request:
-request.investigion.info.text.heading.item.1 = Live Service investigation on a desk pro reference
-request.investigion.info.text.heading.item.2 = Legislative updates to a service
-request.investigion.info.text.heading.item.3 = Improvements or changes
-request.investigion.info.text.heading.item.4 = Bug fixes or errors, not currently relating to Desk-Pro
+request.investigation.info.title = Request Investigation Information
+request.investigation.info.heading = Request Live Service investigation
+request.investigation.info.text.heading = Use this service to request:
+request.investigation.info.text.heading.item.1 = Live Service investigation on a desk pro reference
+request.investigation.info.text.heading.item.2 = Legislative updates to a service
+request.investigation.info.text.heading.item.3 = Improvements or changes
+request.investigation.info.text.heading.item.4 = Bug fixes or errors, not currently relating to Desk-Pro
 
 
 session_expired.title = For your security, this service has been reset

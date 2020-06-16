@@ -25,21 +25,23 @@ main_template: MainTemplate
 title = messages("home.page.title")
  ) {
 
-   @components.heading("home.page.heading")
+   <h1>@components.heading("home.page.heading")</h1>
 
-   <h1 class="heading-large">Use this service to:</h1>
+ <div>
+   <h2>@messages("home.page.use.service.for.heading.text")</h2>
 
    <ul class="list-bullet">
-    <li>Request Live Service investigation</li>
-    <li>Progress chase Live Service investigation requests, using a submission reference</li>
-    <li>Log in as a Live Services team member to view request submissions</li>
+    <li>@messages("home.page.use.service.for.text.item.1")</li>
+    <li>@messages("home.page.use.service.for.text.item.2")</li>
+    <li>@messages("home.page.use.service.for.text.item.3")</li>
    </ul>
+ </div>
 
- @components.button_link(messages("home.page.request.button.text"), "request-live-service-investigation")
+ @components.button_link(messages("home.page.request.button.text"), "request-investigation-information")
  @components.button_link(messages("home.page.progress.chase.button.text"), "progress-chasing")
 
 
-   <h2 class="heading-large">Live Service team</h2>
+   <h2>@messages("home.page.live.service.log.in.heading.text")</h2>
  @components.button_link(messages("home.page.live.service.log.in.button.text"), "ls-log-in")
 
 }
