@@ -54,9 +54,15 @@ request.investigation.info.text.heading.item.2 = Legislative updates to a servic
 request.investigation.info.text.heading.item.3 = Improvements or changes
 request.investigation.info.text.heading.item.4 = Bug fixes or errors, not currently relating to Desk-Pro
 request.investigation.info.before.start.heading = Before you start
-request.information.info.before.start.text = You can also {0} teams for general enquiries
-request.information.info.before.start.link.text = contact Live Services
+request.investigation.info.before.start.text = You can also {0} teams for general enquiries
+request.investigation.info.before.start.link.text = contact Live Services
 request.investigation.info.continue.button.text = Request investigation
+
+live.services.area.title = Live Services Area
+live.services.area.heading = Which area of Live Services is your request for?
+live.services.area.heading.hint.text = This is the  team that manage the service
+live.services.area.radio.option.1 = Newcastle  LS team 1
+live.services.area.radio.option.2 = Newcastle  LS team 2
 
 
 session_expired.title = For your security, this service has been reset

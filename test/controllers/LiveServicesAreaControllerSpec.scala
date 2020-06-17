@@ -19,17 +19,17 @@ package controllers
 import base.SpecBase
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
-import views.html.LiveServiceLndingView
+import views.html.LiveServicesAreaView
 
-class LiveServiceLndingControllerSpec extends SpecBase {
+class LiveServicesAreaControllerSpec extends SpecBase {
 
   "onPageLoad" must {
     "return OK and the correct view for a GET" in {
       val application = applicationBuilder(userAnswers = None).build()
-      val request = FakeRequest(GET, routes.LiveServiceLndingController.onPageLoad().url)
+      val request = FakeRequest(GET, routes.LiveServicesAreaController.onPageLoad().url)
       val result = route(application, request).value
 
-      val view = application.injector.instanceOf[LiveServiceLndingView]
+      val view = application.injector.instanceOf[LiveServicesAreaView]
 
       status(result) mustEqual OK
 
