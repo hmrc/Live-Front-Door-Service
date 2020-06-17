@@ -53,6 +53,10 @@ request.investigation.info.text.heading.item.1 = Live Service investigation on a
 request.investigation.info.text.heading.item.2 = Legislative updates to a service
 request.investigation.info.text.heading.item.3 = Improvements or changes
 request.investigation.info.text.heading.item.4 = Bug fixes or errors, not currently relating to Desk-Pro
+request.investigation.info.before.start.heading = Before you start
+request.information.info.before.start.text = You can also {0} teams for general enquiries
+request.information.info.before.start.link.text = contact Live Services
+request.investigation.info.continue.button.text = Request investigation
 
 
 session_expired.title = For your security, this service has been reset

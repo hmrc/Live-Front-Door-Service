@@ -20,6 +20,10 @@
 
 @()(implicit request: Request[_], messages: Messages)
 
+@contactsLink = {
+    <a id="live-service-contacts-link" href="live-service-team-contacts" role="link" class="link">@messages("request.information.info.before.start.link.text")</a>
+}
+
 @main_template(
     title = messages("request.investigation.info.title")
     ) {
@@ -28,7 +32,6 @@
 
     <h1>@components.heading("request.investigation.info.heading")</h1>
 
-    <div>
     <h2>@messages("request.investigation.info.text.heading")</h2>
 
         <ul class="list-bullet">
@@ -37,5 +40,12 @@
             <li>@messages("request.investigation.info.text.heading.item.3")</li>
             <li>@messages("request.investigation.info.text.heading.item.4")</li>
         </ul>
+
+            <h2>@messages("request.investigation.info.before.start.heading")</h2>
+
+            <p>@Html(messages("request.information.info.before.start.text", contactsLink))</p>
+
+    <div class="section">
+            <a href="live-services-area" role="button" class="button">@messages("request.investigation.info.continue.button.text")</a>
     </div>
 }
