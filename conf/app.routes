@@ -2,7 +2,7 @@
 
 GET        /                                            controllers.IndexController.onPageLoad
 
-GET        /HomePage                                    controllers.HomePageController.onPageLoad
+GET        /landing-page                                controllers.HomePageController.onPageLoad
 
 GET        /ls-log-in                                   controllers.LsLogInController.onPageLoad
 
@@ -10,9 +10,12 @@ GET        /live-service-landing                        controllers.LiveServiceL
 
 GET        /request-investigation-information           controllers.RequestInvestigationInfoPageController.onPageLoad
 
+GET        /live-service-team-contacts                  controllers.LiveServiceTeamContactsController.onPageLoad
+
 GET        /live-services-area                          controllers.LiveServicesAreaController.onPageLoad
 
-GET        /business-priority-level                     controllers.BusinessPriorityLevelController.onPageLoad(_)
+GET        /business-priority-level                     controllers.BusinessPriorityLevelController.onPageLoad(mode: models.Mode = models.NormalMode)
+POST       /business-priority-level                     controllers.BusinessPriorityLevelController.onSubmit(mode: models.Mode = models.NormalMode)
 
 GET        /assets/*file                                controllers.Assets.versioned(path="/public", file: Asset)
 

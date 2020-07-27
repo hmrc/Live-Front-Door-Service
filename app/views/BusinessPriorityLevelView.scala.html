@@ -28,7 +28,7 @@
     title = s"${errorPrefix(form)} ${messages("businessPriorityLevel.title")}"
     ) {
 
-    @formHelper(action = BusinessPriorityLevelController.onSubmit(mode), 'autoComplete -> "off") {
+    @formHelper(action = BusinessPriorityLevelController.onSubmit(), 'autoComplete -> "off") {
 
         @components.back_link()
 

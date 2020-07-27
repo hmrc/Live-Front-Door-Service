@@ -58,6 +58,9 @@ request.investigation.info.before.start.text = You can also {0} teams for genera
 request.investigation.info.before.start.link.text = contact Live Services
 request.investigation.info.continue.button.text = Request investigation
 
+live.service.team.contacts.title = Live Service Team Contacts
+live.service.team.contacts.heading = Live Service team contacts
+
 live.services.area.title = Live Services Area
 live.services.area.heading = Which area of Live Services is your request for?
 live.services.area.heading.hint.text = This is the  team that manage the service
